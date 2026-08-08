@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "org.on1ks.remanga"
-version = "0.2.2"
+version = "0.2.3"
 
 repositories {
     mavenCentral()
@@ -60,7 +60,7 @@ val portableImage by tasks.registering(Exec::class) {
         "--main-class", application.mainClass.get(),
         "--dest", appImageDirectory.get().asFile.absolutePath,
         "--app-version", project.version.toString(),
-        "--icon", project.file("src/main/resources/icons/remanga-official.ico").absolutePath,
+        "--icon", project.file("src/main/resources/icons/yin-yang-flaticon-510186.ico").absolutePath,
         "--description", "Re:Manga API Documentation Generator",
         "--vendor", "Ps1xo-On1kS",
         "--add-launcher", "remanga_api_gen_cli=${project.file("src/jpackage/cli.properties").absolutePath}",
@@ -72,6 +72,9 @@ val portableZip by tasks.registering(Zip::class) {
     archiveFileName = "remanga-api-gen-${project.version}-windows-x64.zip"
     destinationDirectory = layout.buildDirectory.dir("distributions")
     from(appImageDirectory)
+    from(project.file("THIRD_PARTY.md")) {
+        into("remanga_api_gen")
+    }
 }
 
 tasks.register("portableSha256") {

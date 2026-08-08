@@ -41,7 +41,7 @@ import javax.swing.UIManager
 import javax.swing.border.EmptyBorder
 import javax.swing.plaf.basic.BasicScrollBarUI
 
-const val GENERATOR_VERSION = "0.2.2"
+const val GENERATOR_VERSION = "0.2.3"
 private const val DEFAULT_PAGE = "https://remanga.org/card"
 private const val SPLASH_DURATION_MS = 1_350
 
@@ -115,7 +115,7 @@ private object SiteColors {
 }
 
 private fun logoImage(): Image? = GeneratorWindow::class.java
-    .getResource("/icons/remanga-official.png")
+    .getResource("/icons/yin-yang-flaticon-510186.png")
     ?.let { ImageIcon(it).image }
 
 private fun scaledIcon(source: Image, size: Int): ImageIcon = ImageIcon(
