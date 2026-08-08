@@ -1,0 +1,196 @@
+name: Обновление документации API
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */12 * * *"
+
+permissions:
+  contents: write
+
+env:
+  GENERATOR_VERSION: "0.2.1"
+
+concurrency:
+  group: обновление-документации-api
+  cancel-in-progress: false
+
+jobs:
+  update:
+    name: Проверить и опубликовать новую сборку
+    runs-on: [self-hosted, Windows, X64, remanga-api]
+    defaults:
+      run:
+        shell: powershell -NoProfile -Command "$script = Get-Content -Raw -Encoding UTF8 '{0}'; Invoke-Expression $script"
+
+    steps:
+      - name: Получить репозиторий
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Проверить версию frontend ReManga
+        id: version
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          Add-Type -AssemblyName System.Net.Http
+          $client = New-Object System.Net.Http.HttpClient
+          $client.Timeout = [TimeSpan]::FromSeconds(60)
+          $client.DefaultRequestHeaders.UserAgent.ParseAdd("Mozilla/5.0 (Windows NT 10.0; Win64; x64) ReMangaApiDocGenerator/1.0")
+
+          $pages = @(
+            "https://remanga.org/card",
+            "https://реманга.орг/card"
+          )
+          $pageUrl = $null
+          $match = $null
+
+          foreach ($candidate in $pages) {
+            try {
+              Write-Host "Проверка $candidate"
+              $html = $client.GetStringAsync($candidate).GetAwaiter().GetResult()
+              $candidateMatch = [regex]::Match($html, '\\"GIT_HASH\\":\\"([^\\"]+)\\"')
+              if (-not $candidateMatch.Success) {
+                $candidateMatch = [regex]::Match($html, '"GIT_HASH":"([^"]+)"')
+              }
+              if ($candidateMatch.Success) {
+                $pageUrl = $candidate
+                $match = $candidateMatch
+                break
+              }
+            }
+            catch {
+              Write-Warning "$candidate недоступен: $($_.Exception.Message)"
+            }
+          }
+          $client.Dispose()
+
+          if ($null -eq $pageUrl -or $null -eq $match) {
+            throw "Ни основной сайт, ни зеркало ReManga недоступны с этого runner. Проверьте его расположение и сетевой доступ."
+          }
+
+          $release = $match.Groups[1].Value
+          $tag = "frontend-$release"
+          $releaseTags = @(gh api --paginate "repos/$env:GITHUB_REPOSITORY/releases?per_page=100" --jq '.[].tag_name')
+          if ($LASTEXITCODE -ne 0) { throw "Не удалось получить список Releases" }
+          $isNew = $releaseTags -notcontains $tag
+
+          "release=$release" >> $env:GITHUB_OUTPUT
+          "tag=$tag" >> $env:GITHUB_OUTPUT
+          "page_url=$pageUrl" >> $env:GITHUB_OUTPUT
+          "is_new=$($isNew.ToString().ToLowerInvariant())" >> $env:GITHUB_OUTPUT
+
+          if ($isNew) {
+            Write-Host "Найдена новая сборка: $release"
+          }
+          else {
+            Write-Host "Сборка $release уже опубликована"
+          }
+
+      - name: Получить Kotlin-генератор
+        if: steps.version.outputs.is_new == 'true'
+        id: generator
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $tag = "generator-v$env:GENERATOR_VERSION"
+          $toolsDirectory = Join-Path $env:RUNNER_TEMP "remanga-api-generator-$env:GENERATOR_VERSION-$env:GITHUB_RUN_ID"
+          New-Item -ItemType Directory -Path $toolsDirectory -Force | Out-Null
+          gh release download $tag `
+            --repo "$env:GITHUB_REPOSITORY" `
+            --pattern "remanga-api-gen-$env:GENERATOR_VERSION-windows-x64.zip" `
+            --pattern "remanga-api-gen-$env:GENERATOR_VERSION-windows-x64.zip.sha256" `
+            --dir $toolsDirectory
+          if ($LASTEXITCODE -ne 0) { throw "Не удалось скачать Kotlin-генератор $tag" }
+
+          $archive = Join-Path $toolsDirectory "remanga-api-gen-$env:GENERATOR_VERSION-windows-x64.zip"
+          $checksumFile = "$archive.sha256"
+          $expected = ((Get-Content -Raw -Encoding UTF8 $checksumFile).Trim() -split '\s+')[0]
+          $actual = (Get-FileHash -Algorithm SHA256 -LiteralPath $archive).Hash.ToLowerInvariant()
+          if ($actual -ne $expected.ToLowerInvariant()) { throw "Контрольная сумма Kotlin-генератора не совпадает" }
+
+          $portableDirectory = Join-Path $toolsDirectory "portable"
+          Expand-Archive -LiteralPath $archive -DestinationPath $portableDirectory
+          $executable = Get-ChildItem -Path $portableDirectory -Filter remanga_api_gen_cli.exe -File -Recurse | Select-Object -First 1
+          if ($null -eq $executable) { throw "В Portable-архиве отсутствует remanga_api_gen_cli.exe" }
+          "exe=$($executable.FullName)" >> $env:GITHUB_OUTPUT
+
+      - name: Сохранить предыдущий снимок
+        if: steps.version.outputs.is_new == 'true'
+        id: previous
+        run: |
+          $path = Join-Path $env:RUNNER_TEMP "remanga-api-previous-$env:GITHUB_RUN_ID.json"
+          Copy-Item ./endpoints.json $path
+          "path=$path" >> $env:GITHUB_OUTPUT
+
+      - name: Пересобрать документацию Kotlin-генератором
+        if: steps.version.outputs.is_new == 'true'
+        run: |
+          & "${{ steps.generator.outputs.exe }}" `
+            --page-url "${{ steps.version.outputs.page_url }}" `
+            --output "."
+          if ($LASTEXITCODE -ne 0) { throw "Kotlin-генератор завершился с кодом $LASTEXITCODE" }
+
+      - name: Проверить результат генерации
+        if: steps.version.outputs.is_new == 'true'
+        run: |
+          $snapshot = Get-Content -Raw -Encoding UTF8 ./endpoints.json | ConvertFrom-Json
+          if ($snapshot.frontend_release -ne "${{ steps.version.outputs.release }}") {
+            throw "Версия в документации не совпадает с обнаруженной сборкой"
+          }
+          if ($snapshot.endpoint_count -ne $snapshot.endpoints.Count) {
+            throw "Количество маршрутов в снимке не совпадает"
+          }
+          if ($snapshot.endpoint_count -lt 1) {
+            throw "Документация не содержит маршрутов"
+          }
+          Write-Host "Проверено маршрутов: $($snapshot.endpoint_count)"
+
+      - name: Сформировать список изменений API
+        if: steps.version.outputs.is_new == 'true'
+        run: |
+          & ./scripts/Compare-ApiSnapshots.ps1 `
+            -PreviousPath "${{ steps.previous.outputs.path }}" `
+            -CurrentPath ./endpoints.json `
+            -MarkdownPath "./ReManga-API-Changes-${{ steps.version.outputs.release }}.md" `
+            -JsonPath "./ReManga-API-Changes-${{ steps.version.outputs.release }}.json"
+
+      - name: Сохранить новую версию в репозитории
+        if: steps.version.outputs.is_new == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add API_REFERENCE.md endpoints.json endpoints.csv snapshot-summary.json
+          git diff --cached --quiet
+          if ($LASTEXITCODE -eq 0) {
+            Write-Host "Изменений в документации нет"
+          }
+          else {
+            git commit -m "Обновить документацию для сборки ${{ steps.version.outputs.release }}"
+            git push origin HEAD:main
+            if ($LASTEXITCODE -ne 0) { throw "Не удалось отправить обновление в main" }
+          }
+
+      - name: Подготовить готовый Markdown
+        if: steps.version.outputs.is_new == 'true'
+        run: |
+          Copy-Item ./API_REFERENCE.md "./ReManga-API-${{ steps.version.outputs.release }}.md"
+
+      - name: Опубликовать Release
+        if: steps.version.outputs.is_new == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${{ steps.version.outputs.tag }}" `
+            "ReManga-API-${{ steps.version.outputs.release }}.md#Готовая документация Markdown" `
+            "ReManga-API-Changes-${{ steps.version.outputs.release }}.md#Список изменений Markdown" `
+            "ReManga-API-Changes-${{ steps.version.outputs.release }}.json#Список изменений JSON" `
+            "endpoints.json#Маршруты JSON" `
+            "endpoints.csv#Маршруты CSV" `
+            "snapshot-summary.json#Сводка сборки" `
+            --repo "$env:GITHUB_REPOSITORY" `
+            --target main `
+            --title "Документация для сборки ${{ steps.version.outputs.release }}" `
+            --notes "Автоматический снимок ReManga API для frontend-сборки ${{ steps.version.outputs.release }}. Документация неофициальная."
+          if ($LASTEXITCODE -ne 0) { throw "Не удалось опубликовать Release" }

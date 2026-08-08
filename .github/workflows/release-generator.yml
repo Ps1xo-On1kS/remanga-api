@@ -1,0 +1,47 @@
+name: Выпуск Kotlin-генератора
+
+on:
+  push:
+    tags:
+      - "generator-v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Собрать Windows Portable ZIP
+    runs-on: windows-latest
+
+    steps:
+      - name: Получить репозиторий
+        uses: actions/checkout@v7
+
+      - name: Установить Java 21
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: gradle
+          cache-dependency-path: generator/*.gradle.kts
+
+      - name: Проверить и собрать генератор
+        working-directory: generator
+        shell: powershell
+        run: .\gradlew.bat clean test portableSha256 --no-daemon
+
+      - name: Опубликовать Release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $archive = Get-ChildItem ./generator/build/distributions/remanga-api-gen-*-windows-x64.zip -File | Select-Object -First 1
+          $checksum = Get-Item "$($archive.FullName).sha256"
+          $version = "${{ github.ref_name }}".Replace("generator-v", "")
+          gh release create "${{ github.ref_name }}" `
+            $archive.FullName `
+            $checksum.FullName `
+            --repo "$env:GITHUB_REPOSITORY" `
+            --target main `
+            --title "Kotlin-генератор ReManga API $version" `
+            --notes "Portable-сборка для Windows x64. В архиве находятся GUI и CLI с собственной Java-средой; устанавливать Java отдельно не требуется."

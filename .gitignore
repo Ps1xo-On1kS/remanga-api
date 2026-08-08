@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Kotlin/Gradle generator build output
+generator/.gradle/
+generator/.kotlin/
+generator/build/
+generator/API_REFERENCE.md
+generator/endpoints.csv
+generator/endpoints.json
+generator/snapshot-summary.json

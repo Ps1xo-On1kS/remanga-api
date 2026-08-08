@@ -1,0 +1,3758 @@
+{
+  "generated_at_utc": "2026-08-08T10:07:19.0959457Z",
+  "generated_at": "13:07 08.08.2026",
+  "source_page": "https://remanga.org/card",
+  "frontend_release": "5272b905",
+  "api_base_url": "https://api.remanga.org",
+  "media_base_url": "https://remanga.org",
+  "endpoint_count": 312,
+  "endpoints": [
+    {
+      "method": "POST",
+      "path": "/api/activity/vote-post/",
+      "group": "activity",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/activity/active-gift/",
+      "group": "activity",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/activity/notes/",
+      "group": "activity",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/activity/notes/",
+      "group": "activity",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/activity/notes/{note_id}/",
+      "group": "activity",
+      "path_parameters": [
+        "note_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/activity/notes/{note_id}/",
+      "group": "activity",
+      "path_parameters": [
+        "note_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/activity/partner-gift-reward/",
+      "group": "activity",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/activity/partner-gift-reward/",
+      "group": "activity",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/activity/view-page/",
+      "group": "activity",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/activity/vote/",
+      "group": "activity",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/battlepass/current/preview/",
+      "group": "battlepass",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/battlepass/levels/skip/",
+      "group": "battlepass",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/battlepass/levels/skip/",
+      "group": "battlepass",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/billing/promo-codes/",
+      "group": "billing",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/billing/withdraw/{withdraw_id}/",
+      "group": "billing",
+      "path_parameters": [
+        "withdraw_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/billing/coins-exchange/",
+      "group": "billing",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/billing/coins-exchange/",
+      "group": "billing",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/billing/lightning-balance/",
+      "group": "billing",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/billing/lightning-payments/",
+      "group": "billing",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/billing/users/payments/",
+      "group": "billing",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/billing/withdraw/{withdraw_id}/receipt/",
+      "group": "billing",
+      "path_parameters": [
+        "withdraw_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/card-gen/generate/",
+      "group": "card-gen",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/card-gen/status/{task_id}/",
+      "group": "card-gen",
+      "path_parameters": [
+        "task_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/clubs/",
+      "group": "clubs",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/clubs/",
+      "group": "clubs",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/clubs/{club_dir}/buy-perk/{perk_id}/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir",
+        "perk_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/clubs/{club_dir}/change_ranks/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/clubs/{club_dir}/fee-history/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/clubs/{club_dir}/fee-member/{user_id}/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir",
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/clubs/{club_dir}/fee-member/{user_id}/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir",
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/clubs/{club_dir}/fee-member/{user_id}/adjust/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir",
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/clubs/{club_dir}/fee-member/auto-pay/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/clubs/{club_dir}/fee-members/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/clubs/{club_dir}/fee-settings/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/clubs/{club_dir}/fee-settings/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/clubs/{club_dir}/items-requests/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/clubs/{club_dir}/items-requests/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/clubs/{club_dir}/items-requests/{request_id}/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir",
+        "request_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/clubs/{club_dir}/members/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/clubs/{club_dir}/ranks/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/clubs/{club_dir}/ranks/{rank_id}/delete/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir",
+        "rank_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/clubs/{club_dir}/ranks/{rank_id}/edit/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir",
+        "rank_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/clubs/{club_dir}/ranks/create/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/clubs/{club_dir}/regression/",
+      "group": "clubs",
+      "path_parameters": [
+        "club_dir"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/clubs/{dir}/",
+      "group": "clubs",
+      "path_parameters": [
+        "dir"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/clubs/{dir}/",
+      "group": "clubs",
+      "path_parameters": [
+        "dir"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/clubs/{dir}/",
+      "group": "clubs",
+      "path_parameters": [
+        "dir"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/clubs/{dir}/",
+      "group": "clubs",
+      "path_parameters": [
+        "dir"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/clubs/{dir}/change_roles/",
+      "group": "clubs",
+      "path_parameters": [
+        "dir"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/clubs/{dir}/donate/",
+      "group": "clubs",
+      "path_parameters": [
+        "dir"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/clubs/{dir}/donate/history/",
+      "group": "clubs",
+      "path_parameters": [
+        "dir"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/clubs/{dir}/kick_members/",
+      "group": "clubs",
+      "path_parameters": [
+        "dir"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/clubs/{dir}/leave/",
+      "group": "clubs",
+      "path_parameters": [
+        "dir"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/clubs/{dir}/requests/",
+      "group": "clubs",
+      "path_parameters": [
+        "dir"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/clubs/{dir}/requests/{id}/",
+      "group": "clubs",
+      "path_parameters": [
+        "dir",
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/clubs/create-cost/",
+      "group": "clubs",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/clubs/perks/",
+      "group": "clubs",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/clubs/regressions/",
+      "group": "clubs",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/dashboard/{publisher_id}/promo/",
+      "group": "dashboard",
+      "path_parameters": [
+        "publisher_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/dashboard/{publisher_id}/promo/{promo_id}/stop/",
+      "group": "dashboard",
+      "path_parameters": [
+        "publisher_id",
+        "promo_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/dashboard/{publisher_id}/promo/add/",
+      "group": "dashboard",
+      "path_parameters": [
+        "publisher_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/dashboard/{publisher_id}/promo/admin/{promo_id}/stop/",
+      "group": "dashboard",
+      "path_parameters": [
+        "publisher_id",
+        "promo_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/dashboard/{publisher_id}/promo/aggregation/",
+      "group": "dashboard",
+      "path_parameters": [
+        "publisher_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/dashboard/{publisher_id}/promo/billing/",
+      "group": "dashboard",
+      "path_parameters": [
+        "publisher_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/dashboard/{publisher_id}/promo/billing/buy/",
+      "group": "dashboard",
+      "path_parameters": [
+        "publisher_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/dashboard/{publisher_id}/promo/billing/buy/",
+      "group": "dashboard",
+      "path_parameters": [
+        "publisher_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/dashboard/{publisher_id}/promo/statistics/{promo_id}/",
+      "group": "dashboard",
+      "path_parameters": [
+        "publisher_id",
+        "promo_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/dashboard/{publisher_id}/promo/statistics/title/{title_id}/",
+      "group": "dashboard",
+      "path_parameters": [
+        "publisher_id",
+        "title_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/entries/{entry_id}/",
+      "group": "entries",
+      "path_parameters": [
+        "entry_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/advent-calendar/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/advent-calendar/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/advent-calendar/opens/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/card-battle/cards/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/card-battle/catacombs/levels/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/card-battle/catacombs/levels/{level}/enter/",
+      "group": "events",
+      "path_parameters": [
+        "level"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/card-battle/catacombs/mini-game/{attempt_id}/resolve/",
+      "group": "events",
+      "path_parameters": [
+        "attempt_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/card-battle/catacombs/runs/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/card-battle/catacombs/runs/{run_id}/",
+      "group": "events",
+      "path_parameters": [
+        "run_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/card-battle/catacombs/scrolls/cap-raise/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/card-battle/catacombs/scrolls/enhance/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/card-battle/catacombs/scrolls/resurrect/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/card-battle/catacombs/state/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/card-battle/daily/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/card-battle/daily/{id}/claim/",
+      "group": "events",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/card-battle/event-points/buy/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/card-battle/event-points/buy/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/card-battle/join/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/card-battle/locations/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/card-battle/locations/{id}/raid/",
+      "group": "events",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/card-battle/potions/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/card-battle/potions/{id}/use/",
+      "group": "events",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/card-battle/profile/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/card-battle/pvp/history/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/card-battle/pvp/leaderboard/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/card-battle/pvp/match/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/card-battle/pvp/match/{id}/",
+      "group": "events",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/card-battle/pvp/player/{id}/",
+      "group": "events",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/card-battle/pvp/season/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/card-battle/rewards/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/card-battle/squad/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/card-battle/squad/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/card-battle/squad/slot/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/dungeon-hunters/boss/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/dungeon-hunters/boss/{id}/attack/",
+      "group": "events",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/dungeon-hunters/boss/{id}/claim-rewards/",
+      "group": "events",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/dungeon-hunters/boss/{id}/enter/",
+      "group": "events",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/dungeon-hunters/boss/{id}/my-chests/",
+      "group": "events",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/dungeon-hunters/boss/{id}/state/",
+      "group": "events",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/dungeon-hunters/boss/{id}/top/",
+      "group": "events",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/dungeon-hunters/boss/config/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/dungeon-hunters/boss/my-active/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/dungeon-hunters/boss/top/total/clubs/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/dungeon-hunters/boss/top/total/users/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/dungeon-hunters/buy-event-points-by-balance/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/dungeon-hunters/buy-event-points-by-balance/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/dungeon-hunters/dungeon/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/dungeon-hunters/dungeon/{dungeon_id}/enter/",
+      "group": "events",
+      "path_parameters": [
+        "dungeon_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/dungeon-hunters/dungeon/runs/{dungeon_run_id}/mini-game-reward/",
+      "group": "events",
+      "path_parameters": [
+        "dungeon_run_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/dungeon-hunters/dungeon/runs/{dungeon_run_id}/reward/",
+      "group": "events",
+      "path_parameters": [
+        "dungeon_run_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/dungeon-hunters/dungeon/runs/{run_id}/cancel/",
+      "group": "events",
+      "path_parameters": [
+        "run_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/dungeon-hunters/equipment/{user_equipment_id}/equip/",
+      "group": "events",
+      "path_parameters": [
+        "user_equipment_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/dungeon-hunters/equipment/{user_equipment_id}/unequip/",
+      "group": "events",
+      "path_parameters": [
+        "user_equipment_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/dungeon-hunters/equipment/inventory/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/dungeon-hunters/join/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/dungeon-hunters/my-potions/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/dungeon-hunters/my-profile/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/dungeon-hunters/my-runs/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/dungeon-hunters/top/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/dungeon-hunters/top/clubs/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/dungeon-hunters/top/place/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/dungeon-hunters/use-mp-potion/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/eventpoint-balance/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/new-year-madness/action/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/new-year-madness/join/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/new-year-madness/snowman/progress/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/new-year-madness/snowman/top-users/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/new-year-madness/user-team/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/valentine_day/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/valentine_day/action/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/valentine_day/buy/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/valentine_day/choose/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/valentine_day/collect/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/events/valentine_day/collect/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/valentine_day/progress/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/valentine_day/top-users/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/valentine_day/top-users/me/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/events/valentine_day/user-waifu/",
+      "group": "events",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/forms/coins-payments/",
+      "group": "forms",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/forms/payments/",
+      "group": "forms",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/forum/",
+      "group": "forum",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/forum/",
+      "group": "forum",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/forum/{dir}/",
+      "group": "forum",
+      "path_parameters": [
+        "dir"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/forum/{dir}/",
+      "group": "forum",
+      "path_parameters": [
+        "dir"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/forum/{dir}/reactions/",
+      "group": "forum",
+      "path_parameters": [
+        "dir"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/forum/ban/{dir}/",
+      "group": "forum",
+      "path_parameters": [
+        "dir"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/forum/search/",
+      "group": "forum",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/forum/tags/",
+      "group": "forum",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/functions/popup/",
+      "group": "functions",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/functions/sliders-schemes/",
+      "group": "functions",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/functions/banner-sliders/",
+      "group": "functions",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/inventory/{title_id}/cards/",
+      "group": "inventory",
+      "path_parameters": [
+        "title_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/inventory/{user_id}/cards/merge/",
+      "group": "inventory",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/inventory/cards/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/inventory/cards/{id}/",
+      "group": "inventory",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/inventory/cards/{id}/",
+      "group": "inventory",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/inventory/catalog/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/inventory/character/{character_id}/cards/",
+      "group": "inventory",
+      "path_parameters": [
+        "character_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/inventory/{user_id}/cards/manage/exchangeable/",
+      "group": "inventory",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/inventory/{user_id}/cards/manage/favorite/",
+      "group": "inventory",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/{user_id}/collections/",
+      "group": "inventory",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/inventory/{user_id}/collections/",
+      "group": "inventory",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/{user_id}/exchanges/",
+      "group": "inventory",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/inventory/{user_id}/exchanges/",
+      "group": "inventory",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/inventory/{user_id}/exchanges/{id}/",
+      "group": "inventory",
+      "path_parameters": [
+        "user_id",
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/{user_id}/rare-collections/",
+      "group": "inventory",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/cards/{card_id}/is_locked/",
+      "group": "inventory",
+      "path_parameters": [
+        "card_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/cards/{id}/sources/",
+      "group": "inventory",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/cards/{inventory_card_id}/",
+      "group": "inventory",
+      "path_parameters": [
+        "inventory_card_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/cards/album/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/cards/album/users/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/inventory/cards/awaken/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/inventory/cards/dust/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/cards/dust/exchange/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/inventory/cards/dust/exchange/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/inventory/cards/enhance/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/inventory/cards/full-reroll/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/cards/has_cards/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/inventory/cards/reroll/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/inventory/collections/{collection_id}/",
+      "group": "inventory",
+      "path_parameters": [
+        "collection_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/collections/{collection_id}/",
+      "group": "inventory",
+      "path_parameters": [
+        "collection_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/inventory/collections/{collection_id}/",
+      "group": "inventory",
+      "path_parameters": [
+        "collection_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/collections/recent/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/inventory/complete-collection/{collection_id}/",
+      "group": "inventory",
+      "path_parameters": [
+        "collection_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/decks/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/inventory/decks/{deck_id}/choose/",
+      "group": "inventory",
+      "path_parameters": [
+        "deck_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/inventory/decks/{deck_id}/open/",
+      "group": "inventory",
+      "path_parameters": [
+        "deck_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/decks/awakened/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/inventory/decks/awakened/{deck_id}/open/",
+      "group": "inventory",
+      "path_parameters": [
+        "deck_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/items/cards/{user_id}/",
+      "group": "inventory",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/inventory/items/chests/{user_chest_id}/open/",
+      "group": "inventory",
+      "path_parameters": [
+        "user_chest_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/items/chests/{user_id}/",
+      "group": "inventory",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/items/customizations/{user_id}/",
+      "group": "inventory",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/items/moments/{user_id}/",
+      "group": "inventory",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/inventory/items/put-on/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/inventory/items/take-off/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/requests/status/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/upgrades/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/inventory/wishes/",
+      "group": "inventory",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/inventory/wishes/{card_id}/",
+      "group": "inventory",
+      "path_parameters": [
+        "card_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/wishes/{card_id}/",
+      "group": "inventory",
+      "path_parameters": [
+        "card_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/wishes/{card_id}/{user_id}/",
+      "group": "inventory",
+      "path_parameters": [
+        "card_id",
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/wishes/{user_id}/has_wishes/",
+      "group": "inventory",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/wishes/intersection/{partner_id}/",
+      "group": "inventory",
+      "path_parameters": [
+        "partner_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/inventory/wishes/users/{user_id}/",
+      "group": "inventory",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v3/inventory/items/cards/{user_id}/",
+      "group": "inventory",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/publishers/{publisher_id}/cards/",
+      "group": "publishers",
+      "path_parameters": [
+        "publisher_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/publishers/{publisher_id}/contract/",
+      "group": "publishers",
+      "path_parameters": [
+        "publisher_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/publishers/contracts/{contract_id}/acts/",
+      "group": "publishers",
+      "path_parameters": [
+        "contract_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/publishers/{dir}/members/",
+      "group": "publishers",
+      "path_parameters": [
+        "dir"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/publishers/{publisher_dir}/",
+      "group": "publishers",
+      "path_parameters": [
+        "publisher_dir"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/publishers/{publisher_id}/withdraw/",
+      "group": "publishers",
+      "path_parameters": [
+        "publisher_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/publishers/invitations/",
+      "group": "publishers",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/publishers/invitations/",
+      "group": "publishers",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/publishers/invitations/{invitation_id}/",
+      "group": "publishers",
+      "path_parameters": [
+        "invitation_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/publishers/invitations/{invitation_id}/",
+      "group": "publishers",
+      "path_parameters": [
+        "invitation_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/quizzes/",
+      "group": "quizzes",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/quizzes/",
+      "group": "quizzes",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/quizzes/{quiz_id}/",
+      "group": "quizzes",
+      "path_parameters": [
+        "quiz_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/quizzes/{quiz_id}/",
+      "group": "quizzes",
+      "path_parameters": [
+        "quiz_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/quizzes/{quiz_id}/",
+      "group": "quizzes",
+      "path_parameters": [
+        "quiz_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/quizzes/{quiz_id}/answers/",
+      "group": "quizzes",
+      "path_parameters": [
+        "quiz_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/quizzes/{quiz_id}/ban/",
+      "group": "quizzes",
+      "path_parameters": [
+        "quiz_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/quizzes/{quiz_id}/recover/",
+      "group": "quizzes",
+      "path_parameters": [
+        "quiz_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/quizzes/{quiz_id}/users/{option_id}/",
+      "group": "quizzes",
+      "path_parameters": [
+        "quiz_id",
+        "option_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/quizzes/statistics/",
+      "group": "quizzes",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/search/characters/catalog/",
+      "group": "search",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/shop/",
+      "group": "shop",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/shop/buy/{id}/",
+      "group": "shop",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/shop/decks/awakened/",
+      "group": "shop",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/shop/decks/awakened/{id}/",
+      "group": "shop",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/subscription/",
+      "group": "subscription",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/subscription/trial/",
+      "group": "subscription",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/titles/{title_dir}/",
+      "group": "titles",
+      "path_parameters": [
+        "title_dir"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/titles/characters/{id}/",
+      "group": "titles",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/titles/collections/",
+      "group": "titles",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/titles/collections/",
+      "group": "titles",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/titles/collections/{id}/",
+      "group": "titles",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/titles/collections/{id}/",
+      "group": "titles",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/titles/collections/{id}/",
+      "group": "titles",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/titles/moments/",
+      "group": "titles",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/titles/moments/",
+      "group": "titles",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/titles/moments/{moment_dir}/",
+      "group": "titles",
+      "path_parameters": [
+        "moment_dir"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/titles/moments/{moment_dir}/",
+      "group": "titles",
+      "path_parameters": [
+        "moment_dir"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/titles/moments/{moment_dir}/view/",
+      "group": "titles",
+      "path_parameters": [
+        "moment_dir"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/titles/moments/catalog/",
+      "group": "titles",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/titles/moments/tags/",
+      "group": "titles",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v3/titles/",
+      "group": "titles",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/users/bookmarks/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/users/bookmarks/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/users/login/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/users/password-reset/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/users/password-reset/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/users/signup/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/users/social/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/{user_id}/",
+      "group": "users",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/{user_id}/achievements/",
+      "group": "users",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/{user_id}/badges/",
+      "group": "users",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/{user_id}/bookmarks/",
+      "group": "users",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/users/{user_id}/bookmarks/",
+      "group": "users",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/{user_id}/clubs/",
+      "group": "users",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/{user_id}/history/",
+      "group": "users",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/users/{user_id}/history/delete/",
+      "group": "users",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/{user_id}/results/",
+      "group": "users",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/users/{user_id}/user_bookmarks/",
+      "group": "users",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/{user_id}/user_bookmarks/",
+      "group": "users",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/users/{user_id}/user_bookmarks/",
+      "group": "users",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/users/{user_id}/user_bookmarks/",
+      "group": "users",
+      "path_parameters": [
+        "user_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/users/achievements/update/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/badges/{badge_id}/",
+      "group": "users",
+      "path_parameters": [
+        "badge_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/badges/{badge_id}/owners/",
+      "group": "users",
+      "path_parameters": [
+        "badge_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/users/badges/update/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/bans/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/black-list/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/users/black-list/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/users/black-list/{block_id}/",
+      "group": "users",
+      "path_parameters": [
+        "block_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/users/black-list/{block_id}/",
+      "group": "users",
+      "path_parameters": [
+        "block_id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v2/users/current/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/current/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/users/current/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/current/notify-settings/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/users/current/tour-reward/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/users/email-change/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/have-card/{card_id}/",
+      "group": "users",
+      "path_parameters": [
+        "card_id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/my-recommendations/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/notifications/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/users/notifications/delete/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/users/notifications/set-read/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/notifications/summary-by-title/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/notifications/summary-by-type/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/notifications/summary-total/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/users/password-change/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/users/publishers-order/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/requests/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/requests/{id}/",
+      "group": "users",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v2/users/requests/{id}/cancel/",
+      "group": "users",
+      "path_parameters": [
+        "id"
+      ],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/users/set-email/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/users/social/vk/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v2/users/social/vk/bind/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": "application/json",
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/tickets/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/top/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v2/users/top/place/",
+      "group": "users",
+      "path_parameters": [],
+      "bearer_capable": true,
+      "content_type": null,
+      "source_bundles": [
+        "80966-47fe19ddd196d5a0.js"
+      ]
+    }
+  ]
+}

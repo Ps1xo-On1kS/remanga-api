@@ -1,0 +1,103 @@
+{
+  "generated_at_utc": "2026-08-08T10:07:19.0959457Z",
+  "generated_at": "13:07 08.08.2026",
+  "source_page": "https://remanga.org/card",
+  "frontend_release": "5272b905",
+  "endpoint_count": 312,
+  "groups": [
+    {
+      "name": "events",
+      "count": 79
+    },
+    {
+      "name": "inventory",
+      "count": 55
+    },
+    {
+      "name": "users",
+      "count": 54
+    },
+    {
+      "name": "clubs",
+      "count": 35
+    },
+    {
+      "name": "titles",
+      "count": 15
+    },
+    {
+      "name": "activity",
+      "count": 10
+    },
+    {
+      "name": "dashboard",
+      "count": 10
+    },
+    {
+      "name": "publishers",
+      "count": 10
+    },
+    {
+      "name": "quizzes",
+      "count": 10
+    },
+    {
+      "name": "billing",
+      "count": 8
+    },
+    {
+      "name": "forum",
+      "count": 8
+    },
+    {
+      "name": "shop",
+      "count": 4
+    },
+    {
+      "name": "battlepass",
+      "count": 3
+    },
+    {
+      "name": "functions",
+      "count": 3
+    },
+    {
+      "name": "card-gen",
+      "count": 2
+    },
+    {
+      "name": "forms",
+      "count": 2
+    },
+    {
+      "name": "subscription",
+      "count": 2
+    },
+    {
+      "name": "entries",
+      "count": 1
+    },
+    {
+      "name": "search",
+      "count": 1
+    }
+  ],
+  "methods": [
+    {
+      "name": "DELETE",
+      "count": 15
+    },
+    {
+      "name": "GET",
+      "count": 168
+    },
+    {
+      "name": "POST",
+      "count": 104
+    },
+    {
+      "name": "PUT",
+      "count": 25
+    }
+  ]
+}
