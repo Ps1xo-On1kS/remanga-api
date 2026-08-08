@@ -1,6 +1,5 @@
 package org.on1ks.remanga.api
 
-import java.awt.AlphaComposite
 import java.awt.BorderLayout
 import java.awt.Color
 import java.awt.Cursor
@@ -11,10 +10,10 @@ import java.awt.Font
 import java.awt.Graphics
 import java.awt.Graphics2D
 import java.awt.Image
+import java.awt.Rectangle
 import java.awt.RenderingHints
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent
-import java.awt.image.BufferedImage
 import java.nio.file.Path
 import java.nio.file.Paths
 import java.util.concurrent.Executors
@@ -23,6 +22,7 @@ import javax.swing.Box
 import javax.swing.BoxLayout
 import javax.swing.ImageIcon
 import javax.swing.JButton
+import javax.swing.JComponent
 import javax.swing.JFileChooser
 import javax.swing.JFrame
 import javax.swing.JLabel
@@ -30,20 +30,25 @@ import javax.swing.JOptionPane
 import javax.swing.JPanel
 import javax.swing.JProgressBar
 import javax.swing.JScrollPane
+import javax.swing.JScrollBar
 import javax.swing.JTextArea
 import javax.swing.JTextField
+import javax.swing.JWindow
 import javax.swing.SwingConstants
 import javax.swing.SwingUtilities
+import javax.swing.Timer
 import javax.swing.UIManager
 import javax.swing.border.EmptyBorder
+import javax.swing.plaf.basic.BasicScrollBarUI
 
-const val GENERATOR_VERSION = "0.2.1"
+const val GENERATOR_VERSION = "0.2.2"
 private const val DEFAULT_PAGE = "https://remanga.org/card"
+private const val SPLASH_DURATION_MS = 1_350
 
 fun main(args: Array<String>) {
     SwingUtilities.invokeLater {
         runCatching { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()) }
-        GeneratorWindow().isVisible = true
+        GeneratorSplash().showThen { GeneratorWindow().isVisible = true }
     }
 }
 
@@ -107,6 +112,74 @@ private object SiteColors {
     val accent = Color(55, 145, 245)
     val accentHover = Color(78, 160, 250)
     val danger = Color(235, 99, 111)
+}
+
+private fun logoImage(): Image? = GeneratorWindow::class.java
+    .getResource("/icons/remanga-official.png")
+    ?.let { ImageIcon(it).image }
+
+private fun scaledIcon(source: Image, size: Int): ImageIcon = ImageIcon(
+    source.getScaledInstance(size, size, Image.SCALE_SMOOTH),
+)
+
+internal class GeneratorSplash : JWindow() {
+    init {
+        background = Color(0, 0, 0, 0)
+        preferredSize = Dimension(470, 292)
+        contentPane = RoundedSurface(28, SiteColors.background, SiteColors.border).apply {
+            layout = BoxLayout(this, BoxLayout.Y_AXIS)
+            border = EmptyBorder(34, 42, 28, 42)
+
+            val logo = JLabel(logoImage()?.let { scaledIcon(it, 104) }).apply {
+                alignmentX = CENTER_ALIGNMENT
+            }
+            val title = JLabel("Re:Manga API").apply {
+                foreground = SiteColors.text
+                font = Font("Segoe UI", Font.BOLD, 26)
+                alignmentX = CENTER_ALIGNMENT
+            }
+            val subtitle = JLabel("Запуск генератора документации").apply {
+                foreground = SiteColors.secondary
+                font = Font("Segoe UI", Font.PLAIN, 13)
+                alignmentX = CENTER_ALIGNMENT
+            }
+            val accent = JPanel().apply {
+                background = SiteColors.accent
+                minimumSize = Dimension(76, 3)
+                preferredSize = Dimension(76, 3)
+                maximumSize = Dimension(76, 3)
+                alignmentX = CENTER_ALIGNMENT
+            }
+            val version = JLabel("v$GENERATOR_VERSION").apply {
+                foreground = Color(118, 124, 133)
+                font = Font("Segoe UI", Font.PLAIN, 11)
+                alignmentX = CENTER_ALIGNMENT
+            }
+
+            add(logo)
+            add(Box.createVerticalStrut(14))
+            add(title)
+            add(Box.createVerticalStrut(5))
+            add(subtitle)
+            add(Box.createVerticalStrut(19))
+            add(accent)
+            add(Box.createVerticalGlue())
+            add(version)
+        }
+        pack()
+        setLocationRelativeTo(null)
+    }
+
+    fun showThen(onFinished: () -> Unit) {
+        isVisible = true
+        Timer(SPLASH_DURATION_MS) {
+            dispose()
+            onFinished()
+        }.apply {
+            isRepeats = false
+            start()
+        }
+    }
 }
 
 private class RoundedSurface(
@@ -192,6 +265,51 @@ private class SlimProgressBar : JProgressBar(0, 100) {
     }
 }
 
+private class HiddenScrollButton : JButton() {
+    init {
+        preferredSize = Dimension(0, 0)
+        minimumSize = Dimension(0, 0)
+        maximumSize = Dimension(0, 0)
+        isFocusable = false
+        isBorderPainted = false
+    }
+}
+
+private class SiteScrollBarUI : BasicScrollBarUI() {
+    override fun configureScrollBarColors() {
+        thumbColor = SiteColors.accent
+        thumbDarkShadowColor = SiteColors.accent
+        thumbHighlightColor = SiteColors.accentHover
+        thumbLightShadowColor = SiteColors.accent
+        trackColor = SiteColors.surface
+    }
+
+    override fun createDecreaseButton(orientation: Int): JButton = HiddenScrollButton()
+    override fun createIncreaseButton(orientation: Int): JButton = HiddenScrollButton()
+    override fun getMinimumThumbSize(): Dimension = Dimension(8, 34)
+
+    override fun paintTrack(graphics: Graphics, component: JComponent, bounds: Rectangle) {
+        val g = graphics.create() as Graphics2D
+        g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON)
+        g.color = Color(30, 33, 38)
+        val trackWidth = 5
+        val x = bounds.x + (bounds.width - trackWidth) / 2
+        g.fillRoundRect(x, bounds.y, trackWidth, bounds.height, trackWidth, trackWidth)
+        g.dispose()
+    }
+
+    override fun paintThumb(graphics: Graphics, component: JComponent, bounds: Rectangle) {
+        if (!component.isEnabled || bounds.isEmpty) return
+        val g = graphics.create() as Graphics2D
+        g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON)
+        g.color = if (isDragging) SiteColors.accentHover else SiteColors.accent
+        val thumbWidth = 8
+        val x = bounds.x + (bounds.width - thumbWidth) / 2
+        g.fillRoundRect(x, bounds.y + 1, thumbWidth, bounds.height - 2, 8, 8)
+        g.dispose()
+    }
+}
+
 internal class GeneratorWindow : JFrame("ReManga API · Генератор документации") {
     private val outputField = JTextField(Paths.get(".").toAbsolutePath().normalize().toString())
     private val progress = SlimProgressBar()
@@ -210,7 +328,9 @@ internal class GeneratorWindow : JFrame("ReManga API · Генератор до�
         minimumSize = Dimension(820, 560)
         preferredSize = Dimension(860, 590)
         background = SiteColors.background
-        iconImage = javaClass.getResource("/icons/remanga-official.png")?.let { ImageIcon(it).image }
+        iconImages = logoImage()?.let { source ->
+            listOf(32, 48, 64, 128, 256).map { size -> scaledIcon(source, size).image }
+        } ?: emptyList()
         contentPane = root()
 
         start.addActionListener { startGeneration() }
@@ -235,8 +355,7 @@ internal class GeneratorWindow : JFrame("ReManga API · Генератор до�
     }
 
     private fun header(): JPanel {
-        val rawLogo = javaClass.getResource("/icons/remanga-official.png")?.let { ImageIcon(it).image }
-        val logo = JLabel(rawLogo?.let { whiteIcon(it, 40) }, SwingConstants.CENTER).apply {
+        val logo = JLabel(logoImage()?.let { scaledIcon(it, 40) }, SwingConstants.CENTER).apply {
             preferredSize = Dimension(44, 44)
         }
         val title = JLabel("Генератор документации").apply {
@@ -313,8 +432,16 @@ internal class GeneratorWindow : JFrame("ReManga API · Генератор до�
         }
         val scroll = JScrollPane(log).apply {
             isOpaque = false
-            border = EmptyBorder(0, 0, 0, 0)
+            border = EmptyBorder(5, 0, 5, 7)
             viewport.isOpaque = false
+            horizontalScrollBarPolicy = JScrollPane.HORIZONTAL_SCROLLBAR_NEVER
+            verticalScrollBarPolicy = JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED
+            verticalScrollBar.apply {
+                isOpaque = false
+                unitIncrement = 18
+                preferredSize = Dimension(12, 0)
+                setUI(SiteScrollBarUI())
+            }
         }
         val logSurface = RoundedSurface(18, SiteColors.surface, SiteColors.border).apply {
             layout = BorderLayout()
@@ -365,18 +492,6 @@ internal class GeneratorWindow : JFrame("ReManga API · Генератор до�
             add(buttons, BorderLayout.NORTH)
             add(meta, BorderLayout.SOUTH)
         }
-    }
-
-    private fun whiteIcon(source: Image, size: Int): ImageIcon {
-        val image = BufferedImage(size, size, BufferedImage.TYPE_INT_ARGB)
-        val g = image.createGraphics()
-        g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON)
-        g.drawImage(source, 0, 0, size, size, null)
-        g.composite = AlphaComposite.SrcIn
-        g.color = Color.WHITE
-        g.fillRect(0, 0, size, size)
-        g.dispose()
-        return ImageIcon(image)
     }
 
     private fun chooseOutput() {
