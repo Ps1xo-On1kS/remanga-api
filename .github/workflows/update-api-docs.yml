@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 env:
-  GENERATOR_VERSION: "0.2.2"
+  GENERATOR_VERSION: "0.2.3"
 
 concurrency:
   group: обновление-документации-api
