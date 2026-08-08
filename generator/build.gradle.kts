@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "org.on1ks.remanga"
-version = "0.2.1"
+version = "0.2.2"
 
 repositories {
     mavenCentral()
@@ -61,7 +61,7 @@ val portableImage by tasks.registering(Exec::class) {
         "--dest", appImageDirectory.get().asFile.absolutePath,
         "--app-version", project.version.toString(),
         "--icon", project.file("src/main/resources/icons/remanga-official.ico").absolutePath,
-        "--description", "Генератор документации ReManga API",
+        "--description", "Re:Manga API Documentation Generator",
         "--vendor", "Ps1xo-On1kS",
         "--add-launcher", "remanga_api_gen_cli=${project.file("src/jpackage/cli.properties").absolutePath}",
     )
