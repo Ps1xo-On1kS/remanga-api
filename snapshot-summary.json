@@ -1,9 +1,9 @@
 {
-  "generated_at_utc": "2026-08-17T14:56:47.1189097Z",
-  "generated_at": "17:56 17.08.2026",
+  "generated_at_utc": "2026-08-18T01:54:30.5741780Z",
+  "generated_at": "04:54 18.08.2026",
   "source_page": "https://remanga.org/card",
-  "frontend_release": "d849bc37",
-  "endpoint_count": 312,
+  "frontend_release": "deb94e49",
+  "endpoint_count": 314,
   "groups": [
     {
       "name": "events",
@@ -23,11 +23,7 @@
     },
     {
       "name": "titles",
-      "count": 15
-    },
-    {
-      "name": "activity",
-      "count": 10
+      "count": 17
     },
     {
       "name": "dashboard",
@@ -42,6 +38,10 @@
       "count": 10
     },
     {
+      "name": "activity",
+      "count": 9
+    },
+    {
       "name": "billing",
       "count": 8
     },
@@ -50,15 +50,15 @@
       "count": 8
     },
     {
+      "name": "functions",
+      "count": 4
+    },
+    {
       "name": "shop",
       "count": 4
     },
     {
       "name": "battlepass",
-      "count": 3
-    },
-    {
-      "name": "functions",
       "count": 3
     },
     {
@@ -89,7 +89,7 @@
     },
     {
       "name": "GET",
-      "count": 168
+      "count": 170
     },
     {
       "name": "POST",

@@ -2,11 +2,11 @@
 
 Справочник автоматически сформирован из публичных JavaScript-сборок сайта [ReManga](https://remanga.org).
 
-- Дата генерации: `17:56 17.08.2026`
-- Версия frontend: `d849bc37`
+- Дата генерации: `04:54 18.08.2026`
+- Версия frontend: `deb94e49`
 - Базовый адрес API: `https://api.remanga.org`
 - Базовый адрес медиа: `https://remanga.org`
-- Извлечено маршрутов: **312**
+- Извлечено маршрутов: **314**
 
 > Это не официальная документация ReManga. Маршруты могут измениться без предупреждения. Клиент сайта помечает маршруты как совместимые с Bearer-токеном, но это не доказывает обязательность авторизации. Полные схемы запросов и ответов отсутствуют в production-сборке, поэтому справочник их не выдумывает.
 
@@ -19,7 +19,7 @@
 | Метод | Количество |
 |---|---:|
 | DELETE | 15 |
-| GET | 168 |
+| GET | 170 |
 | POST | 104 |
 | PUT | 25 |
 
@@ -36,7 +36,7 @@
 
 В веб-клиенте обнаружены стандартные параметры каталога: `count`, `page`, `rank` и `ordering`. Значения рангов: `rank_a`, `rank_s`, `rank_re` и `rank_ev`.
 
-## Активность - `activity` (10)
+## Активность - `activity` (9)
 
 | Метод | Путь | Параметры пути | Bearer | Тип содержимого |
 |---|---|---|:---:|---|
@@ -48,7 +48,6 @@
 | PUT | `/api/v2/activity/notes/{note_id}/` | note_id | да | application/json |
 | GET | `/api/v2/activity/partner-gift-reward/` |  | да |  |
 | POST | `/api/v2/activity/partner-gift-reward/` |  | да | application/json |
-| POST | `/api/v2/activity/view-page/` |  | да | application/json |
 | POST | `/api/v2/activity/vote/` |  | да | application/json |
 
 ## Боевой пропуск - `battlepass` (3)
@@ -244,10 +243,11 @@
 | GET | `/api/v2/forum/search/` |  | да |  |
 | GET | `/api/v2/forum/tags/` |  | да |  |
 
-## Служебные функции - `functions` (3)
+## Служебные функции - `functions` (4)
 
 | Метод | Путь | Параметры пути | Bearer | Тип содержимого |
 |---|---|---|:---:|---|
+| GET | `/api/functions/feature-flags/user/` |  | да |  |
 | GET | `/api/functions/popup/` |  | да |  |
 | GET | `/api/functions/sliders-schemes/` |  | да |  |
 | GET | `/api/v2/functions/banner-sliders/` |  | да |  |
@@ -364,11 +364,13 @@
 | GET | `/api/v2/subscription/` |  | да |  |
 | POST | `/api/v2/subscription/trial/` |  | да | application/json |
 
-## Тайтлы - `titles` (15)
+## Тайтлы - `titles` (17)
 
 | Метод | Путь | Параметры пути | Bearer | Тип содержимого |
 |---|---|---|:---:|---|
 | GET | `/api/v2/titles/{title_dir}/` | title_dir | да |  |
+| GET | `/api/v2/titles/{title_id}/my-progress/` | title_id | да |  |
+| POST | `/api/v2/titles/{title_id}/my-progress/` | title_id | да | application/json |
 | GET | `/api/v2/titles/characters/{id}/` | id | да |  |
 | GET | `/api/v2/titles/collections/` |  | да |  |
 | POST | `/api/v2/titles/collections/` |  | да | application/json |
