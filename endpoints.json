@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-08-18T01:54:30.5741780Z",
-  "generated_at": "04:54 18.08.2026",
+  "generated_at_utc": "2026-08-19T15:12:57.7349311Z",
+  "generated_at": "18:12 19.08.2026",
   "source_page": "https://remanga.org/card",
-  "frontend_release": "deb94e49",
+  "frontend_release": "891f6a3f",
   "api_base_url": "https://api.remanga.org",
   "media_base_url": "https://remanga.org",
   "endpoint_count": 314,
