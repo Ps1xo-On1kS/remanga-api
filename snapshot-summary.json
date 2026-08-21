@@ -1,48 +1,80 @@
 {
-  "generated_at_utc": "2026-08-20T01:55:45.2902247Z",
-  "generated_at": "04:55 20.08.2026",
+  "generated_at_utc": "2026-08-21T13:23:13.0283840Z",
+  "generated_at": "16:23 21.08.2026",
   "source_page": "https://remanga.org/card",
-  "frontend_release": "a8b2316b",
-  "endpoint_count": 314,
+  "frontend_release": "8fed73b4",
+  "endpoint_count": 837,
   "groups": [
     {
-      "name": "events",
-      "count": 79
-    },
-    {
-      "name": "inventory",
-      "count": 55
+      "name": "panel",
+      "count": 134
     },
     {
       "name": "users",
-      "count": 54
-    },
-    {
-      "name": "clubs",
-      "count": 35
+      "count": 131
     },
     {
       "name": "titles",
-      "count": 17
+      "count": 103
     },
     {
-      "name": "dashboard",
-      "count": 10
+      "name": "events",
+      "count": 95
+    },
+    {
+      "name": "inventory",
+      "count": 65
     },
     {
       "name": "publishers",
-      "count": 10
+      "count": 46
     },
     {
-      "name": "quizzes",
-      "count": 10
+      "name": "clubs",
+      "count": 39
     },
     {
       "name": "activity",
-      "count": 9
+      "count": 38
     },
     {
       "name": "billing",
+      "count": 34
+    },
+    {
+      "name": "houses",
+      "count": 29
+    },
+    {
+      "name": "functions",
+      "count": 18
+    },
+    {
+      "name": "search",
+      "count": 17
+    },
+    {
+      "name": "quizzes",
+      "count": 15
+    },
+    {
+      "name": "dashboard",
+      "count": 13
+    },
+    {
+      "name": "battlepass",
+      "count": 12
+    },
+    {
+      "name": "forms",
+      "count": 11
+    },
+    {
+      "name": "shop",
+      "count": 10
+    },
+    {
+      "name": "dnd",
       "count": 8
     },
     {
@@ -50,23 +82,11 @@
       "count": 8
     },
     {
-      "name": "functions",
+      "name": "entries",
       "count": 4
-    },
-    {
-      "name": "shop",
-      "count": 4
-    },
-    {
-      "name": "battlepass",
-      "count": 3
     },
     {
       "name": "card-gen",
-      "count": 2
-    },
-    {
-      "name": "forms",
       "count": 2
     },
     {
@@ -74,30 +94,38 @@
       "count": 2
     },
     {
-      "name": "entries",
+      "name": "config",
       "count": 1
     },
     {
-      "name": "search",
+      "name": "schema",
+      "count": 1
+    },
+    {
+      "name": "service",
       "count": 1
     }
   ],
   "methods": [
     {
       "name": "DELETE",
-      "count": 15
+      "count": 48
     },
     {
       "name": "GET",
-      "count": 170
+      "count": 434
+    },
+    {
+      "name": "PATCH",
+      "count": 28
     },
     {
       "name": "POST",
-      "count": 104
+      "count": 241
     },
     {
       "name": "PUT",
-      "count": 25
+      "count": 86
     }
   ]
 }
